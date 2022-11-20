@@ -1,0 +1,12 @@
+server:
+  port: ${service-product.port}
+
+spring:
+  application:
+    name: service-product
+
+
+
+  profiles:
+    active: dev
+

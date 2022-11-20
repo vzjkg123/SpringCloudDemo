@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.server-address}
+
+  redis:
+    host: ${redis.server-address}
+
+  datasource:
+    hikari:
+      jdbc-url:

@@ -1,0 +1,13 @@
+server:
+  port: ${service-order.port}
+
+
+
+spring:
+  application:
+    name: service-order
+
+
+
+  profiles:
+    active: dev

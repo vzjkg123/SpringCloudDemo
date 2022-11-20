@@ -1,0 +1,9 @@
+server:
+  port: ${service-user.port}
+
+
+spring:
+  application:
+    name: service-user
+  profiles:
+    active: dev

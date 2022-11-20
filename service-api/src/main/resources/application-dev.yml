@@ -8,5 +8,8 @@ spring:
     host: ${redis.server-address}
 
   datasource:
-    hikari:
-      jdbc-url:
+    druid:
+      url: jdbc:mysql://192.168.123.232:3306/university?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: my-secret-pw
+      driver-class-name: com.mysql.cj.jdbc.Driver

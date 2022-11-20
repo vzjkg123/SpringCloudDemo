@@ -14,7 +14,7 @@ public class GatewayController {
 
     @GetMapping("gateway")
     public String gateway() {
-        return loginService.testRedis();
+        return "gateway";
     }
 
 

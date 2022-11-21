@@ -4,7 +4,17 @@ server:
 spring:
   application:
     name: service-gateway
-
-
+  cloud:
+    gateway:
+      routes:
+        - id: user_route
+          order: 1
+          uri: lb://service-user
+          predicates:
+            - Path=/service/user/**
+          filters:
+            - StripPrefix=2
   profiles:
     active: dev
+  main:
+    web-application-type: reactive

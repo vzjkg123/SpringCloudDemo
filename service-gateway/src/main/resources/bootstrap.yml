@@ -1,0 +1,15 @@
+server:
+  port: ${service-gateway.port}
+
+spring:
+  application:
+    name: service-gateway
+
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        server-addr: ${nacos.server-address}
+        group: ${nacos.group}
+        file-extension: ${nacos.file-extension}

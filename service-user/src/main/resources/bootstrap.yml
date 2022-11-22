@@ -1,9 +1,6 @@
-server:
-  port: ${service-gateway.port}
-
 spring:
   application:
-    name: service-gateway
+    name: service-user
 
   profiles:
     active: dev
@@ -13,3 +10,7 @@ spring:
         server-addr: ${nacos.server-address}
         group: ${nacos.group}
         file-extension: ${nacos.file-extension}
+        shared-configs:
+          - data-id: service-gateway-dev.yaml
+            group: ${nacos.group}
+            refresh: true
